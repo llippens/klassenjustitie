@@ -1,6 +1,6 @@
 # Load libraries
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, modelsummary, ggplot2, ggeffects, performance,
+pacman::p_load(tidyverse, ggplot2, ggeffects, performance,
                scales, here, markdown, rlang, install = TRUE, update = FALSE)
 
 # Define UI for app
@@ -254,7 +254,7 @@ server <- function(input, output) {
            de juridische voorgeschiedenis van de dader, kunnen mogelijk (beter) verklaren waarom de waarden
            tussen subgroepen afwijken. Daarnaast kan het aselecte of niet-willekeurige karakter van
            de steekproeftrekking van vonnissen voor een algemeen vertekend beeld zorgen.
-           Minder goed gedocumenteerde of gemediatiseerde vonnissen werden bijvoorbeeld vooralsnog
+           Minder goed gedocumenteerde (~gemediatiseerde) vonnissen werden bijvoorbeeld vooralsnog
            niet opgenomen in de dataset.
            \n\n**Technische details.** De afhankelijke variabele in het lineair regressiemodel
            (gebruik makend van de kleinste-kwadratenmethode) waarop deze figuur gebaseerd is,
